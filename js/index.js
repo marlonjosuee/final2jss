@@ -9,6 +9,11 @@ button1.onclick = () => {
   cantidad1 += 1;
   numero1.innerHTML = cantidad1;
   localStorage.setItem("numero1", cantidad1);
+  Swal.fire({
+    text:
+      "Usted está agregando su polo número " + cantidad1 + " de este modelo",
+    confirmButtonText: "Ok",
+  });
 };
 
 const numero2localstorage = localStorage.getItem("numero2");
@@ -21,4 +26,9 @@ button2.onclick = () => {
   cantidad2 += 1;
   numero2.innerHTML = cantidad2;
   localStorage.setItem("numero2", cantidad2);
+  Swal.fire({
+    text:
+      "Usted está agregando su polo número " + cantidad2 + " de este modelo",
+    confirmButtonText: "Ok",
+  });
 };
